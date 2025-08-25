@@ -1,0 +1,85 @@
+/* src/components/Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed; 
+  width: 90%; 
+  top: 1rem; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 1000;
+  border-radius: 10px; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  backdrop-filter: blur(5px); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.navbar-hidden {
+  transform: translateX(-50%) translateY(-150%);
+}
+
+.navbar-brand a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Updated styling for the "NewGen" text with a metallic gradient */
+.navbar-brand a strong {
+  background: linear-gradient(to right, #e0e0e0, #a0a0a0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.navbar-links li {
+  margin-right: 2rem;
+}
+
+.navbar-links li:last-child {
+  margin-right: 0;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+    width: 100%; 
+  }
+  
+  .navbar-links li {
+    margin-right: 1rem;
+  }
+  
+  .navbar-links a {
+    font-size: 0.9rem;
+  }
+}
+
+.Fitness{
+  color: rgb(41, 172, 179);
+}
